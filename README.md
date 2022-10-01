@@ -1,7 +1,7 @@
-# bootcampR
+## bootcampR
 *Repositório para colocar os scripts do curso **Data Science and Machine Learning with R***
 
-## Sections
+### Sections
 
 1. Introduction to R basics (matrices, dataframes, lists)
 2. Data input and output
