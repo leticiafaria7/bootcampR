@@ -1,2 +1,2 @@
 # machineLearningBootcampR
-repositório para colocar os scripts do curso de data science and machine learning with R
+Repositório para colocar os scripts do curso de Data Science and Machine Learning with R
