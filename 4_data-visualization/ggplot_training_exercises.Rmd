@@ -1,0 +1,58 @@
+---
+title: "ggplot training exercises"
+output: html_notebook
+---
+### preparing environment
+```{r}
+setwd("G:/Meu Drive/5. Cursos/Programacao/Curso R Udemy/bootcampR")
+
+rm(list = ls())
+
+library(tidyverse)
+library(ggthemes)
+
+```
+
+```{r}
+head(mpg)
+```
+
+### histogram of hwy mpg values
+```{r}
+ggplot(mpg) +
+  aes(x = hwy) +
+  geom_histogram()
+```
+
+### barplot of car counts per manufacturer with color fill defined by cyl count
+```{r}
+ggplot(mpg) +
+  aes(x = manufacturer, fill = factor(cyl)) +
+  geom_bar()
+```
+
+### switch now to use the txhousing dataset that comes with ggplot2
+```{r}
+head(txhousing)
+```
+
+### create a scatterplot of volume versus sales. Afterwards play around with alpha and color arguments to clarify information.
+
+
+```{r}
+ggplot(txhousing) +
+  aes(x = sales, y = volume) +
+  geom_point(alpha = 0.5)
+```
+
+### add a smooth fit line to the scatterplot from above. Hint: You may need to look up geom_smooth()
+```{r}
+ggplot(txhousing) +
+  aes(x = sales, y = volume) +
+  geom_point(alpha = 0.5) +
+  geom_smooth()
+```
+
+
+
+

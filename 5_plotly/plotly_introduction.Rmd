@@ -1,0 +1,30 @@
+---
+title: "overview of plotly and interactive visualizations"
+output: html_notebook
+---
+
+### preparing environment
+```{r}
+setwd("G:/Meu Drive/5. Cursos/Programacao/Curso R Udemy/bootcampR")
+
+rm(list = ls())
+
+library(tidyverse)
+library(plotly)
+
+```
+
+```{r}
+pl <- ggplot(mtcars, aes(mpg, wt)) +
+  geom_point()
+
+print(pl)
+```
+```{r}
+gpl <- ggplotly(pl)
+
+print(gpl)
+```
+
+
+
